@@ -1,0 +1,342 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: aliceblue;
+    color: darkslategray;
+    line-height: 1.6;
+}
+
+
+header {
+    background: linear-gradient(to right, lightsteelblue, lavender);
+    text-align: center;
+    padding: 20px 15px 12px;
+    box-shadow: 0 2px 8px lightgray;
+    position: sticky;     
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: midnightblue;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkslategray;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background-color: ghostwhite;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+
+nav a:hover {
+    background-color: steelblue;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+
+section,
+.cards {
+    background-color: white;
+    border: 1px solid lightsteelblue;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 6px gainsboro;
+    scroll-margin-top: 110px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover,
+.cards:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px lightgray;
+}
+
+
+h2 {
+    color: steelblue;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid lavender;
+}
+
+h3 {
+    color: slategray;
+    margin: 16px 0 10px;
+}
+
+#welcome {
+    background-color: mintcream;
+    text-align: center;
+    border-color: paleturquoise;
+}
+
+.cards {
+    background-color: lavenderblush;
+    border-color: thistle;
+}
+
+.cards ul {
+    list-style: none;
+}
+
+.cards li {
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    background-color: white;
+    border-left: 4px solid plum;
+    border-radius: 6px;
+    transition: padding-left 0.3s ease, background-color 0.3s ease;
+}
+
+.cards li:hover {
+    padding-left: 20px;
+    background-color: seashell;
+}
+
+
+label {
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    padding: 8px 10px;
+    margin: 4px 14px 4px 0;
+    border: 1px solid lightsteelblue;
+    border-radius: 6px;
+    background-color: ghostwhite;
+    color: darkslategray;
+    font-family: inherit;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: steelblue;
+    background-color: white;
+    box-shadow: 0 0 6px lightskyblue;
+}
+
+textarea {
+    width: 100%;
+    max-width: 450px;
+    resize: vertical;
+}
+
+
+button {
+    padding: 9px 20px;
+    margin: 6px 8px 0 0;
+    border: none;
+    border-radius: 6px;
+    background-color: lightsteelblue;
+    color: darkslategray;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: steelblue;
+    color: white;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);  
+}
+
+button[type="reset"] {
+    background-color: thistle;
+}
+
+button[type="reset"]:hover {
+    background-color: plum;
+    color: darkslategray;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border: none;                      
+    border-bottom: 1px solid gainsboro;
+}
+
+th {
+    background-color: lightsteelblue;
+    color: midnightblue;
+}
+
+tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: ghostwhite;
+}
+
+
+tbody tr:hover {
+    background-color: lightcyan;
+}
+
+
+input[type="checkbox"] {
+    accent-color: steelblue;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#goals label {
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#goals label:hover {
+    color: steelblue;
+}
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: darkgray;
+}
+
+
+footer {
+    background: linear-gradient(to right, lavender, lightsteelblue);
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+    color: midnightblue;
+    font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+
+    section,
+    .cards {
+        padding: 16px;
+        scroll-margin-top: 140px;
+    }
+
+  
+    label {
+        display: block;
+        margin-top: 8px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #goals label {
+        display: inline;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header {
+        position: static;      
+    }
+
+    header h1 {
+        font-size: 1.25rem;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    button {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    section,
+    .cards {
+        scroll-margin-top: 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}

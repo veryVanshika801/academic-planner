@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Smart Student Academic Planne</title>
+    </head>
+    <body>
+        <header id="main-heading">
+            <h1>Smart Student Academic Planner</h1>
+        
+        <nav>
+            <a href="#welcome">HOME</a>
+            <a href="#assignment">ASSIGNMENTS</a>
+            <a href="#exams">EXAMS</a>
+            <a href="#timetable">TIMETABLE</a>
+            <a href="#goals">STUDY GOALS</a>
+        </nav>
+        </header>
+
+
+        <main>
+            <section id="welcome">
+                <h2>Welcome,Student!</h2>
+                <p>Keep track of your assignments, exams and daily study schedule in one place, so you never miss a deadline</p>
+            </section>
+
+            <div class="cards">
+                <h3>Quick Summary</h3>
+                <ul>
+                    <li>Assignments pending: 1</li>
+                    <li>Next Exam: Maths on 5 Dec</li>
+                    <li>Study goals completed: 2</li>
+                </ul>
+            </div>
+
+            <section id="assignment">
+                <h2>Assignment Tracker</h2>
+                <h3>Add a new assignment</h3>
+
+                <form>
+                    <label for="subjects">Subject: </label>
+                    <input type="text" id="subject" name="subject" placeholder="eg: Maths">
+                    <label for="title">Task: </label>
+                    <input type="text" id="title" name="title" placeholder="eg: Module 2 exercises">
+                    <label for="due">Due Date:</label>
+                    <input type="date" id="due" name="due"><br><br>
+
+                    <label for="priority">Priority:</label>
+                    <select id="priority" name="priority">
+                        <option>High</option>
+                        <option>Medium</option>
+                        <option>Low</option>
+                    </select><br><br>
+
+                    <label for="status">Status:</label>
+                    <select id="status" name="status">
+                        <option>Pending</option>
+                        <option>In Progress</option>
+                        <option>Done</option>
+                    </select><br><br>
+
+                    <button type="submit">Add Assignment</button>
+                    <button type="reset">Clear</button>
+                </form>
+
+                <h3>My Assignments</h3>
+                <table border="1" cellpadding="8">
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Task</th>
+                            <th>Due Date</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Maths</td>
+                            <td>Regression assignment</td>
+                            <td>01-12-26</td>
+                            <td>Highest</td>
+                            <td>In Progress</td>
+                        </tr>
+                        <tr>
+                            <td>Agentic ai</td>
+                            <td>Lab practical</td>
+                            <td>03-12-26</td>
+                            <td>Medium</td>
+                            <td>Pending</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>Linked list worksheet</td>
+                            <td>06-12-26</td>
+                            <td>Low</td>
+                            <td>Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section> 
+
+
+
+            <section id="exams">
+                <h2>Exam Schedule</h2>
+                <table border="1" cellpadding="8">
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Topics</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Maths</td>
+                            <td>05-12-2026</td>
+                            <td>10:00 AM</td>
+                            <td>Probability, Calculus</td>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>08-12-2026</td>
+                            <td>10:00 AM</td>
+                            <td>Flexbox, Grid, Responsive</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>11-12-2026</td>
+                            <td>2:00 PM</td>
+                            <td>ArrayList, Recursion, LinkedList</td>
+                        </tr>
+                        <tr>
+                            <td>Agentic Ai</td>
+                            <td>15-12-26</td>
+                            <td>02:00 PM</td>
+                            <td>Python</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+           
+            <section id="timetable">
+                <h2>Weekly Study Timetable</h2>
+                <table border="1" cellpadding="8">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>6:00 - 7:00 AM</td>
+                            <td>Maths</td>
+                            <td>HTML</td>
+                            <td>Maths</td>
+                            <td>Java</td>
+                            <td>Agentic Ai</td>
+                        </tr>
+                        <tr>
+                            <td>7:00 - 8:00 AM</td>
+                            <td colspan="5">Break and breakfast</td>
+                        </tr>
+                        <tr>
+                            <td>5:00 - 6:00 PM</td>
+                            <td>Agentic ai</td>
+                            <td>Maths</td>
+                            <td>HTMl</td>
+                            <td>Maths</td>
+                            <td>Revision</td>
+                        </tr>
+                        <tr>
+                            <td>7:00 - 8:00 PM</td>
+                            <td>Revision</td>
+                            <td>Revision</td>
+                            <td>Assignments</td>
+                            <td>Assignments</td>
+                            <td>Free time</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        
+
+            <section id="goals">
+                <h2>Study Goals</h2>
+                <p>Tick a box when you finish a goal.</p>
+
+                <input type="checkbox" id="g1">
+                <label for="g1">Revise Maths and complete assignment</label><br>
+
+                <input type="checkbox" id="g2">
+                <label for="g2">Complete Java worksheet</label><br>
+
+                <input type="checkbox" id="g3">
+                <label for="g3">Write Agentic ai lab practicals</label><br>
+
+                <input type="checkbox" id="g4">
+                <label for="g4">Solve 2 previous year question papers</label><br><br>
+
+                <h3>Quick Notes</h3>
+                <textarea rows="5" cols="40" placeholder="Write reminders here..."></textarea><br>
+                <button type="button">Save Note</button>
+            </section>
+        </main>
+
+
+        <footer>
+            <p>Smart Student Academic Planner</p> <p> Made by: Vanshika </p>
+        </footer>
+        
+    </body>
+</html>
